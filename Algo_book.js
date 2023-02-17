@@ -71,14 +71,22 @@
 
 
 
-var arr1 = [0, 23, -5, 87, -63, 15];
+// var arr1 = [0, 23, -5, 87, -63, 15];
 
-for (var i = 0; i < arr1.length; i++) {
+// for (var i = 0; i < arr1.length; i++) {
     
-    if (arr1[i] < 0) {
-        arr1[i] = "Dojo";
-        }
+//     if (arr1[i] < 0) {
+//         arr1[i] = "Dojo";
+//         }
        
-}
+// }
 
-console.log(arr1);
+// console.log(arr1);
+
+
+function sumnum(num1, num2) {
+    sum = num1 + num2;
+    return sum;
+    
+};
+console.log(sumnum(12, 5))
