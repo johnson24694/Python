@@ -106,3 +106,18 @@
 // for (var i = 0; i < myArr.length; i++) {
 //     console.log(myArr[i]);
 // }
+
+// Get and Print Average
+// Analyze an array’s values and print the average.
+
+var avgArr = [5,22,95,13,4,2];
+var sum = 0;
+
+    for (var i = 0; i < avgArr.length; i++) {
+        sum += avgArr[i];
+        avg = sum / avgArr.length;
+
+    }
+    console.log(avg);
+    
+
