@@ -84,9 +84,17 @@
 // console.log(arr1);
 
 
-function sumnum(num1, num2) {
-    sum = num1 + num2;
-    return sum;
+// function sumnum(num1, num2) {
+//     sum = num1 + num2;
+//     return sum;
     
-};
-console.log(sumnum(12, 5))
+// };
+// console.log(sumnum(12, 5))
+
+// Print all odd integers from 1 to 255.
+
+// for (var i = 1; i < 256; i++) {
+//     if (i % 2 != 0){
+//         console.log(i);
+//     }
+// }
