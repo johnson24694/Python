@@ -110,14 +110,27 @@
 // Get and Print Average
 // Analyze an array’s values and print the average.
 
-var avgArr = [5,22,95,13,4,2];
-var sum = 0;
+// var avgArr = [5,22,95,13,4,2];
+// var sum = 0;
 
-    for (var i = 0; i < avgArr.length; i++) {
-        sum += avgArr[i];
-        avg = sum / avgArr.length;
+//     for (var i = 0; i < avgArr.length; i++) {
+//         sum += avgArr[i];
+//         avg = sum / avgArr.length;
 
-    }
-    console.log(avg);
+//     }
+//     console.log(avg);
+
+
+// Square each value in a given array, returning that same array with changed values.    
+
+// var sqArr = [9, 45, 15, 80, 4, 3];
+
+// for (var i=0; i < sqArr.length; i++) {
+//     sqArr[i]  = sqArr[i]*sqArr[i];
     
+// }
+// console.log(sqArr);
+
+Zero Out Negative Numbers
+Return the given array, after setting any negative values to zero.
 
