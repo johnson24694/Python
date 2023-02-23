@@ -98,3 +98,11 @@
 //         console.log(i);
 //     }
 // }
+
+// Iterate through a given array, printing each value.
+
+// var myArr = [1, 25, 36, 'dojo', -58, 0];
+
+// for (var i = 0; i < myArr.length; i++) {
+//     console.log(myArr[i]);
+// }
