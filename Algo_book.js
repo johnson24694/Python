@@ -148,8 +148,8 @@
 // end
 
 
-myArr = [5, 3, 24, 7, 22, 0, 3, 8];
-            myArr.push(0);
-            myArr.shift();
-            console.log(myArr);
+// myArr = [5, 3, 24, 7, 22, 0, 3, 8];
+//             myArr.push(0);
+//             myArr.shift();
+//             console.log(myArr);
 
