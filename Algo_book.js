@@ -131,6 +131,25 @@
 // }
 // console.log(sqArr);
 
-Zero Out Negative Numbers
-Return the given array, after setting any negative values to zero.
+// Zero Out Negative Numbers
+// Return the given array, after setting any negative values to zero.
+
+// newArr = [0, 24, -5, 6, -88, -1];
+
+//     for (var i = 0; i < newArr.length; i++) {
+//         if (newArr[i] < 0) {
+//             newArr[i] = 0
+//         }
+//     }
+//     console.log(newArr);
+
+// Shift Array Values
+// Given an array, move all values forward by one index, dropping the first and leaving a '0' value at the
+// end
+
+
+myArr = [5, 3, 24, 7, 22, 0, 3, 8];
+            myArr.push(0);
+            myArr.shift();
+            console.log(myArr);
 
