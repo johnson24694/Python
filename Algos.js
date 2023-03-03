@@ -37,12 +37,32 @@
 
 // Only integers greater than or equal to zero will be supplied to the function.
 
-function factorialize(num) {
-    let product = 1;
-    for (let i = 2; i <= num; i++) {
-      product *= i;
-    }
-    return product;
-  }
+// function factorialize(num) {
+//     let product = 1;
+//     for (let i = 2; i <= num; i++) {
+//       product *= i;
+//     }
+//     return product;
+//   }
   
-  console.log(factorialize(4));
+//   console.log(factorialize(4));
+
+// Find the Longest Word in a String
+
+// Return the length of the longest word in the provided sentence.
+
+// Your response should be a number.
+
+function findLongestWordLength(str) {
+    let stringSpl = str.split(' ');
+    let longest = 0;
+    for (var i = 0; i < stringSpl.length; i++){
+      if (stringSpl[i].length >= longest){
+        longest = stringSpl[i].length;
+
+      }
+    }
+  return longest;
+}
+
+console.log(findLongestWordLength("May the force be with you"));
