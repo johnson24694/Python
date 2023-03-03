@@ -53,16 +53,41 @@
 
 // Your response should be a number.
 
-function findLongestWordLength(str) {
-    let stringSpl = str.split(' ');
-    let longest = 0;
-    for (var i = 0; i < stringSpl.length; i++){
-      if (stringSpl[i].length >= longest){
-        longest = stringSpl[i].length;
+// function findLongestWordLength(str) {
+//     let stringSpl = str.split(' ');
+//     let longest = 0;
+//     for (var i = 0; i < stringSpl.length; i++){
+//       if (stringSpl[i].length >= longest){
+//         longest = stringSpl[i].length;
 
+//       }
+//     }
+//   return longest;
+// }
+
+// console.log(findLongestWordLength("May the force be with you"));
+
+
+
+// Return Largest Numbers in Arrays
+
+// Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
+
+// Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
+
+function largestOfFour(arr) {
+let newArr = [];
+  for (var i = 0; i < arr.length; i++){
+    let largestNum = arr[i][0];
+    for(var j = 0; j < arr[i].length; j++){
+      if(arr[i][j] > largestNum){
+        largestNum = arr[i][j];  
       }
     }
-  return longest;
+    newArr[i] = largestNum;
+  }
+  return newArr;
 }
 
-console.log(findLongestWordLength("May the force be with you"));
+console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+
