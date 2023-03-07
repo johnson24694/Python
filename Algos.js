@@ -75,19 +75,26 @@
 
 // Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
 
-function largestOfFour(arr) {
-let newArr = [];
-  for (var i = 0; i < arr.length; i++){
-    let largestNum = arr[i][0];
-    for(var j = 0; j < arr[i].length; j++){
-      if(arr[i][j] > largestNum){
-        largestNum = arr[i][j];  
-      }
-    }
-    newArr[i] = largestNum;
-  }
-  return newArr;
-}
+// function largestOfFour(arr) {
+// let newArr = [];
+//   for (var i = 0; i < arr.length; i++){
+//     let largestNum = arr[i][0];
+//     for(var j = 0; j < arr[i].length; j++){
+//       if(arr[i][j] > largestNum){
+//         largestNum = arr[i][j];  
+//       }
+//     }
+//     newArr[i] = largestNum;
+//   }
+//   return newArr;
+// }
 
-console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+// console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
 
+// Write Arrow Functions with Parameters
+// Rewrite the myConcat function which appends contents of arr2 to arr1 so that the function uses arrow function syntax.
+
+const myConcat = (arr1, arr2) => arr1.concat(arr2)
+  
+
+console.log(myConcat([1, 2], [3, 4, 5]));
