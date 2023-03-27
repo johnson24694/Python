@@ -1,23 +1,31 @@
-from flask import Flask  
-app = Flask(__name__)    
-@app.route('/')          
-def hello_world():
-    return 'Hello World!'   #localhost:5000/ will return "Hello World!"
+from flask import Flask, render_template, request, redirect, session
+app = Flask(__name__)
+app.secret_key = 'keep it secret, keep it safe' 
 
-@app.route('/dojo')
-def dojo():
-  return "Dojo!"  #Localhost:5000/dojo will return "Dojo!"
+@app.route('/')
+def index():
+    if 'counter' in session:
+        session['counter'] += 1
+    else:
+        session['counter'] = 1
 
-@app.route('/say/<name>')
-def say(name):
-    print(name)
-    return "Hi, "  + name + "!"  #localhost:5000/say/<name> will return Hi, <name>! 
+    return render_template("index.html")
 
-@app.route('/repeat/<times>/<name>') # for a route '/users/____/____', two parameters in the url get passed as username and id
-def repeat(times, name):
-    print(times)
-    print(name)
-    return str(name) * int(times)  #prints the "name" as a string "times" number of times.
+@app.route('/destroy_session')
+def destroy_session():
+    session.clear()
 
-if __name__=="__main__":
+    return redirect('/')
+
+@app.route('/action_buttons', methods=['POST'])
+def action_buttons():
+    if request.form['select'] == 'add_two':
+        session['counter'] += 1
+    elif request.form['select'] == 'reset':
+        session['counter'] = 0
+    
+    return redirect('/')
+
+
+if __name__ == "__main__":
     app.run(debug=True)
